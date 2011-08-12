@@ -1,0 +1,16 @@
+<table border="0" cellpadding="0" cellspacing="0" class="year">
+	<thead>
+		<tr>
+			<th colspan="{{ colspan }}" class="year">{{ year }}</th>
+		</tr>
+	</thead>
+	<tbody>
+	{% for row in rows %}
+		<tr>
+		{% for month in row %}
+			{% if month %}<td>{{ month }}</td>{% endif %}
+		{% endfor %}
+		</tr>
+	{% endfor %}
+	</tbody>
+</table>
