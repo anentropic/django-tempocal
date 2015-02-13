@@ -4,7 +4,7 @@ from distutils.core import setup
 
 setup(
     name='django-tempocal',
-    version='0.1.2',
+    version='0.1.3',
     author=u'Anentropic',
     packages=['tempocal'],
     url='https://github.com/anentropic/django-tempocal',

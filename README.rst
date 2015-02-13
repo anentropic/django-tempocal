@@ -19,3 +19,4 @@ Add ``'tempocal'`` to your ``INSTALLED_APPS``.
         month_table = calendar.formatmonth(int(year), int(month))
         return render_to_response('myview.html', {'month_table': month_table})
 
+This will use the ``tempocal/month.html`` that comes with tempocal, you can override this via the normal Django mechanism.
