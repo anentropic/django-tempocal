@@ -110,9 +110,9 @@ class TemplatedCalendar(HTMLCalendar):
         Return a formatted year as a table of tables.
         """
         rows = []
-        for i in xrange(January, January + 12, width):
+        for i in range(January, January + 12, width):
             row = []
-            for m in xrange(i, 13):
+            for m in range(i, 13):
                 if m > i + width:
                     # this is new logic compared to HTMLCalendar, which would
                     # just not output any TD cells after the end of months in
